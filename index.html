@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy 19th Birthday, Mrs Me</title>
+  <meta name="description" content="A birthday world built for Itumeleng Nhlapo: eight months of us, photos, videos and a letter from the man who loves her most." />
+  <meta name="author" content="Martin" />
+  <meta property="og:title" content="Happy Birthday Mrs Me — 21 September" />
+  <meta property="og:description" content="Eight months of us, in photos, videos and one very long love letter. Happy birthday, Mrs Me." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Manrope:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <noscript><style>#intro { display: none; } body.intro-open { overflow: auto; } #site { opacity: 1; pointer-events: auto; }</style></noscript>
+</head>
+
+<body class="intro-open">
+
+  <!-- ============ OPENING REVEAL ============ -->
+  <div id="intro" class="birthday-intro" role="dialog" aria-modal="true" aria-label="Birthday surprise">
+    <div class="intro-petals" aria-hidden="true"></div>
+    <div class="intro-inner">
+      <div class="intro-heart">
+        <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg>
+      </div>
+      <p class="intro-date">21 SEPTEMBER</p>
+      <h1 class="intro-title">
+        Happy 19th Birthday
+        <span class="intro-script">Love of my life</span>
+      </h1>
+      <p class="intro-sub">I made a little world for the girl who means everything to me.</p>
+      <button type="button" id="intro-open" class="btn-primary intro-btn">
+        Open your surprise
+        <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg>
+      </button>
+    </div>
+  </div>
+
+  <main class="page">
+
+    <!-- 3D floating hearts + stars (drawn by js/main.js) -->
+    <div class="bg-scene" aria-hidden="true">
+      <canvas id="bg-canvas"></canvas>
+      <div class="bg-glow"></div>
+    </div>
+
+    <!-- Tap anywhere = floating heart -->
+    <div id="heart-layer" class="heart-layer" aria-hidden="true"></div>
+
+    <div id="site" class="site" inert>
+
+      <!-- ============ HERO: photo slideshow + 3D title ============ -->
+      <section id="hero" class="hero-gallery">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <!-- photo cards are added here by js/main.js (from js/data.js) -->
+        <div class="hero-image-overlay"></div>
+
+        <div class="hero-front">
+          <section class="hero-3d">
+            <div id="hero-content" class="hero-content">
+              <p class="hero-kicker">21 September • My beautiful princess</p>
+              <h1 class="hero-title">
+                <span class="hero-title-top">Happy 19th Birthday</span>
+                <span class="hero-title-script">Mrs Me</span>
+              </h1>
+              <p class="hero-sub">
+                Itumeleng Nhlapo — my lover, my bestfriend, the love of my life. This whole
+                little world was built just for you.
+              </p>
+              <a href="#letter" class="hero-cta">Read my letter to you</a>
+            </div>
+            <div id="hero-cue" class="hero-cue">scroll · tilt · tap</div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ============ REASONS ============ -->
+      <section class="section section-md">
+        <div class="reveal">
+          <div class="section-title">
+            <span class="kicker">Eight months straight</span>
+            <h2><span class="text-gold">My favourite chapter</span></h2>
+          </div>
+        </div>
+        <div class="reveal" data-delay="120">
+          <p class="lead">
+            Eight months of you being a wonder and a miracle in my life. Not one day
+            wasted, not one moment I would trade. Tap each card — every one of them is
+            true.
+          </p>
+        </div>
+        <div class="reveal" data-delay="220">
+          <div class="reason-grid">
+            <button type="button" class="flip-card" aria-label="Reason 01" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">01</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">You love me beyond restrictions.</span>
+              </span>
+            </button>
+            <button type="button" class="flip-card" aria-label="Reason 02" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">02</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">You are a friend beyond judgement.</span>
+              </span>
+            </button>
+            <button type="button" class="flip-card" aria-label="Reason 03" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">03</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">You feel like a sister beyond blood.</span>
+              </span>
+            </button>
+            <button type="button" class="flip-card" aria-label="Reason 04" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">04</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">You are a wife beyond marriage.</span>
+              </span>
+            </button>
+            <button type="button" class="flip-card" aria-label="Reason 05" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">05</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">Your laugh fixes my whole day.</span>
+              </span>
+            </button>
+            <button type="button" class="flip-card" aria-label="Reason 06" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">06</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">You are too good to be true — yet you are good.</span>
+              </span>
+            </button>
+            <button type="button" class="flip-card" aria-label="Reason 07" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">07</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">You drive me crazy, and I love it.</span>
+              </span>
+            </button>
+            <button type="button" class="flip-card" aria-label="Reason 08" aria-pressed="false">
+              <span class="flip-inner">
+                <span class="flip-face flip-front glass-card"><span class="text-gold">08</span></span>
+                <span class="flip-face flip-back glass-card glow-ring">Eight months in, and I still choose you daily.</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PHOTO STORY ============ -->
+      <section class="section section-lg">
+        <div class="reveal">
+          <div class="section-title">
+            <span class="kicker">Us, in pictures</span>
+            <h2><span class="text-gold">My whole world in photographs</span></h2>
+          </div>
+        </div>
+
+        <div class="photo-story">
+          <figure class="memory-card story-card">
+            <div class="story-media">
+              <img id="story-img" class="photo-enter" alt="" />
+            </div>
+            <figcaption class="story-caption">
+              <span id="story-count" class="story-count"></span>
+              <p id="story-caption" class="story-text"></p>
+              <div class="story-nav">
+                <button type="button" id="story-prev" class="icon-btn" aria-label="Previous photo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+                </button>
+                <button type="button" id="story-next" class="icon-btn" aria-label="Next photo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+          <div id="story-thumbs" class="story-thumbs" aria-label="Choose a photo"></div>
+        </div>
+      </section>
+
+      <!-- ============ VIDEOS ============ -->
+      <section class="section section-video">
+        <div class="reveal">
+          <div class="section-title">
+            <span class="kicker">Little moments in motion</span>
+            <h2><span class="text-gold">Memories I keep replaying</span></h2>
+          </div>
+        </div>
+        <div class="reveal" data-delay="120">
+          <div class="video-grid">
+            <figure class="memory-card video-card">
+              <video src="assets/videos/moment-1.mp4" controls autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption>Forever cute</figcaption>
+            </figure>
+            <figure class="memory-card video-card">
+              <video src="assets/videos/moment-2.mp4" controls autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption>Beautiful as Ever</figcaption>
+            </figure>
+            <figure class="memory-card video-card">
+              <video src="assets/videos/moment-3.mp4" controls autoplay muted loop playsinline preload="metadata"></video>
+              <figcaption>Effortlessly you</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LOVE LETTER ============ -->
+      <section id="letter" class="section section-letter">
+        <div class="reveal">
+          <div class="section-title">
+            <span class="kicker">For your eyes only</span>
+            <h2><span class="text-gold">A letter for Mrs Me</span></h2>
+          </div>
+        </div>
+
+        <div class="letter-wrap">
+          <button type="button" id="letter-open" class="letter-btn" aria-label="Open your birthday letter">
+            <span class="letter-tilt">
+              <span class="letter-card glass-card glow-ring animate-float-soft">
+                <span class="letter-emoji">💌</span>
+                <span class="letter-cta"><span class="text-gold">Open your letter</span></span>
+                <span class="letter-hint">Tap me, Mrs Me</span>
+              </span>
+            </span>
+          </button>
+
+          <div id="letter-body" class="letter-body" hidden>
+            <div class="reveal" data-from="left" data-delay="0">
+              <p class="glass-card letter-p">Love of my life 🥹❤️ My sweet princess 🥹 My lover and bestfriend ❤️🥹 the day I have been fully waiting for has finally come and God I'm so happy to be experiencing it with you🥹❤️ I can't express how happy I am that I get to be in your life throughout this day 🥹 yes I'm not close but I'm here in your life to cheer with you for your birthday and be with you for more to come🥹❤️ you will never have to celebrate the birthdays alone anymore cause I'm here and will always look forward to your birthday like it's mine🥹❤️</p>
+            </div>
+            <div class="reveal" data-from="right" data-delay="120">
+              <p class="glass-card letter-p">You've been a wonder and miracle in my life🥹❤️ a too good to be true person yet you are good❤️ a lover beyond restrictions🥹 a friend beyond judgements❤️ a sister beyond sharing blood🥹 and a wife beyond marriage 🥹❤️</p>
+            </div>
+            <div class="reveal" data-from="left" data-delay="240">
+              <p class="glass-card letter-p">I'm truly blessed to have you in my life and get to call you my own🥹❤️ I always say that I'm sure you now know😂❤️ but matter of fact is I've never been so in love like I am now🥹 you drive me completely crazy Itumeleng Nhlapo 😭😭 and unfortunately I love it😭😭❤️</p>
+            </div>
+            <div class="reveal" data-from="right" data-delay="360">
+              <p class="glass-card letter-p">I might not be near you at the moment but trust me I'm so smiling with you and happy to be witnessing you grow up🥹🥹 Ohh my God my babe is becoming an adult 🥹🥹😂❤️</p>
+            </div>
+            <div class="reveal" data-from="left" data-delay="480">
+              <p class="glass-card letter-p">Happy birthday my dearest girlfriend 🥹❤️ May God bless you adequately 🥹 may he grant you more than enough❤️ May favor be what follows you all your days🥹 May your name be known upon all corners of the earth❤️🥹 May grace clothe you like a veil❤️ And may access be your name in all things great❤️🥹 I love you so much babe 🥹❤️ and I will forever do so🥹🥹</p>
+            </div>
+            <div class="reveal" data-from="right" data-delay="600">
+              <p class="glass-card letter-p letter-final"><span class="text-gold">Happy birthday Mrs Me</span>🥹🥹❤️</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CLOSING NOTE ============ -->
+      <section class="closing">
+        <div class="reveal">
+          <div class="glass-card glow-ring animate-float-soft closing-card">
+            <p class="closing-title"><span class="text-gold">One day, Mrs Me becomes your real name.</span></p>
+            <p class="closing-text">
+              Until then: happy birthday, my love. May favour follow you all your days,
+              may grace clothe you like a veil, and may I always be the one cheering the
+              loudest.
+            </p>
+            <p class="closing-sign">Forever yours — Martin 🥹❤️</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FOOTER + COUNTDOWN ============ -->
+      <footer class="footer">
+        <div class="reveal">
+          <div class="section-title">
+            <span class="kicker">Our next milestone</span>
+            <h2><span class="text-gold">Counting to 15 January</span></h2>
+          </div>
+        </div>
+        <div class="reveal" data-delay="120">
+          <div id="anniversary-countdown" class="countdown"></div>
+        </div>
+        <p class="footer-note">21 · 09 · Made with my whole heart</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
